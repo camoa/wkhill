@@ -64,7 +64,6 @@ AddEncoding gzip svgz
 <IfModule !mod_rewrite.c>
   FallbackResource /index.php
 </IfModule>
-
 # Various rewrite rules.
 <IfModule mod_rewrite.c>
   RewriteEngine on
