@@ -15,7 +15,7 @@ body #pg__c.page-panel section#content > #content-area {
   }
 
   .cog-panel--mq {
-    @include container(80em);
+    @include grid-row();
   }
 }
 
@@ -26,18 +26,18 @@ body #pg__c.page-panel section#content > #content-area {
 /// Cog Panel Layouts /////////////////////////////
 .panel-cog-layout-one-col { // one-column
   .cog-layout--main {
-    @include span(12 of 12 last);
+    @include grid-column();
   }
 }
 
 .panel-cog-layout-one-two-one { // one-two-one
   @include breakpoint($up-sm) {
     .cog-layout--middle-left {
-      @include span(6 of 12);
+      @include grid-column(6);
     }
 
     .cog-layout--middle-right {
-      @include span(6 of 12 last);
+      @include grid-column(6);
     }
   }
 }
@@ -45,11 +45,11 @@ body #pg__c.page-panel section#content > #content-area {
 .panel-cog-layout-one-two-one-cl { // one-two-one content left
   @include breakpoint($up-sm) {
     .cog-layout--middle-left {
-      @include span(9 of 12);
+      @include grid-column(9);
     }
 
     .cog-layout--middle-right {
-      @include span(3 of 12 last);
+      @include grid-column(3);
     }
   }
 }
@@ -57,11 +57,11 @@ body #pg__c.page-panel section#content > #content-area {
 .panel-cog-layout-one-two-one-cr { // one-two-one content right
   @include breakpoint($up-sm) {
     .cog-layout--middle-left {
-      @include span(3 of 12);
+      @include grid-column(3);
     }
 
     .cog-layout--middle-right {
-      @include span(9 of 12 last);
+      @include grid-column(9);
     }
   }
 }
@@ -69,15 +69,15 @@ body #pg__c.page-panel section#content > #content-area {
 .panel-cog-layout-one-three-one { // one-three-one
   @include breakpoint($up-sm) {
     .cog-layout--middle-left {
-      @include span(4 of 12);
+      @include grid-column(4);
     }
 
     .cog-layout--middle-center {
-      @include span(4 of 12);
+      @include grid-column(4);
     }
 
     .cog-layout--middle-right {
-      @include span(4 of 12 last);
+      @include grid-column(4);
     }
   }
 }
@@ -85,15 +85,15 @@ body #pg__c.page-panel section#content > #content-area {
 .panel-cog-layout-one-three-one-cm { // one-three-one content middle
   @include breakpoint($up-sm) {
     .cog-layout--middle-left {
-      @include span(3 of 12);
+      @include grid-column(3);
     }
 
     .cog-layout--middle-center {
-      @include span(6 of 12);
+      @include grid-column(6);
     }
 
     .cog-layout--middle-right {
-      @include span(3 of 12 last);
+      @include grid-column(3);
     }
   }
 }
@@ -101,23 +101,23 @@ body #pg__c.page-panel section#content > #content-area {
 .panel-cog-layout-one-two-three-one { // one-two-three-one
   @include breakpoint($up-sm) {
     .cog-layout--first-middle-left {
-      @include span(6 of 12);
+      @include grid-column(6);
     }
 
     .cog-layout--first-middle-right {
-      @include span(6 of 12 last);
+      @include grid-column(6);
     }
 
     .cog-layout--second-middle-left {
-      @include span(4 of 12);
+      @include grid-column(4);
     }
 
     .cog-layout--second-middle-center {
-      @include span(4 of 12);
+      @include grid-column(4);
     }
 
     .cog-layout--second-middle-right {
-      @include span(4 of 12 last);
+      @include grid-column(4);
     }
   }
 }
@@ -125,23 +125,23 @@ body #pg__c.page-panel section#content > #content-area {
 .panel-cog-layout-one-three-two-one { // one-three-two-one
   @include breakpoint($up-sm) {
     .cog-layout--first-middle-left {
-      @include span(4 of 12);
+      @include grid-column(4);
     }
 
     .cog-layout--first-middle-center {
-      @include span(4 of 12);
+      @include grid-column(4);
     }
 
     .cog-layout--first-middle-right {
-      @include span(4 of 12 last);
+      @include grid-column(4);
     }
 
     .cog-layout--second-middle-left {
-      @include span(6 of 12);
+      @include grid-column(6);
     }
 
     .cog-layout--second-middle-right {
-      @include span(6 of 12 last);
+      @include grid-column(6);
     }
   }
 }

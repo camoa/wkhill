@@ -12,7 +12,7 @@
 .body-sidebars-first {
   @include breakpoint($up-sm) {
     aside.sidebar-first {
-      @include span(3 of 12);
+      @include grid-column(3);
 
       > * {
         padding-left: 15px;
@@ -20,7 +20,7 @@
     }
 
     section#content {
-      @include span(9 of 12 last);
+      @include grid-column(9);
 
       > * {
         padding-right: 25px;
@@ -34,7 +34,7 @@
 .body-sidebars-second {
   @include breakpoint($up-sm) {
     aside.sidebar-second {
-      @include span(3 of 12 last);
+      @include grid-column(3);
 
       > * {
         padding-right: 15px;
@@ -42,7 +42,7 @@
     }
 
     section#content {
-      @include span(9 of 12);
+      @include grid-column(9);
 
       > * {
         padding-left: 25px;
@@ -56,7 +56,7 @@
 .body-sidebars-both {
   @include breakpoint($up-sm) {
     aside.sidebar-first {
-      @include span(2 of 12);
+      @include grid-column(2);
 
       > * {
         padding-left: 15px;
@@ -64,7 +64,7 @@
     }
 
     section#content {
-      @include span(8 of 12);
+      @include grid-column(8);
 
       > * {
         padding-right: 25px;
@@ -72,7 +72,7 @@
     }
 
     aside.sidebar-second {
-      @include span(2 of 12 last);
+      @include grid-column(2);
 
       > * {
         padding-right: 15px;
@@ -85,7 +85,7 @@
 //////////////////////////////////
 .body-sidebars-none {
   section#content {
-    @include span(12 of 12);
+    @include grid-column(12);
 
     > * {
       padding-left: 15px;
